@@ -1,0 +1,10 @@
+<div>
+    <th:block>
+      <h1 th:text="${user.username}"></h1>
+      <p th:text="${user.phone_number}"></p>
+      <p th:text="${user.email}"></p>
+    </th:block>
+
+    <a class="btn btn-primary" href="/auctions/my-auctions" role="button">View your auctions</a>
+    <a class="btn btn-primary" href="/auctions/bought" role="button">View books you bought</a>
+</div>

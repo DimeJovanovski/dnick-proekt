@@ -1,0 +1,62 @@
+<div>
+  <h1>Create auction</h1>
+  <form method="POST" th:action="@{'/auctions/add'}" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text"
+             name="title"
+             id="title"
+             required
+             class="form-control"
+             placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      <input type="text"
+             name="author"
+             id="author"
+             required
+             class="form-control"
+             placeholder="Enter author">
+    </div>
+    <div class="form-group">
+      <label>Condition</label>
+      <select name="book_condition" class="form-control">
+        <option th:each="con : ${book_conditions}"
+                th:value="${con}"
+                th:text="${con}"
+        >
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Type</label>
+      <select name="book_type" class="form-control">
+        <option th:each="type : ${book_types}"
+                th:value="${type}"
+                th:text="${type}"
+        >
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="picture">Picture:</label>
+      <input type="file"
+             name="picture"
+             id="picture"
+             required
+             class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="number"
+             name="price"
+             id="price"
+             required
+             class="form-control">
+    </div>
+
+    <button id="submit" type="submit" class="btn btn-primary">Create</button>
+
+  </form>
+</div>
