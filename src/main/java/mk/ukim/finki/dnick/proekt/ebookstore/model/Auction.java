@@ -57,6 +57,10 @@ public class Auction {
     }
 
     public Auction() {
+    }
 
+    public void buyAuction(User buyer) {
+        this.buyer = buyer;
+        this.status = AuctionStatus.SOLD;
     }
 }

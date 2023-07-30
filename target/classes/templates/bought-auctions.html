@@ -1,4 +1,6 @@
 <div>
   <h1>Bought books</h1>
-
+  <th:block th:each="auction : ${auctions}">
+    <h1 th:text="${auction.title}"></h1>
+  </th:block>
 </div>

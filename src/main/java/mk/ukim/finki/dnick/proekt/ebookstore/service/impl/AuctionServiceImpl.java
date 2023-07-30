@@ -5,6 +5,7 @@ import mk.ukim.finki.dnick.proekt.ebookstore.model.User;
 import mk.ukim.finki.dnick.proekt.ebookstore.model.enumerations.AuctionStatus;
 import mk.ukim.finki.dnick.proekt.ebookstore.model.enumerations.BookCondition;
 import mk.ukim.finki.dnick.proekt.ebookstore.model.enumerations.BookType;
+import mk.ukim.finki.dnick.proekt.ebookstore.model.exceptions.InvalidAuctionIdException;
 import mk.ukim.finki.dnick.proekt.ebookstore.repository.AuctionRepository;
 import mk.ukim.finki.dnick.proekt.ebookstore.service.AuctionService;
 import mk.ukim.finki.dnick.proekt.ebookstore.service.UserService;
@@ -80,5 +81,37 @@ public class AuctionServiceImpl implements AuctionService {
                 .filter(auction -> auction.getSeller().getUsername().equals(username))
                 .collect(Collectors.toList());
         return myAuctions;
+    }
+
+    @Override
+    public List<Auction> getBoughtAuctions() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = authentication.getName();
+        List<Auction> boughtAuctions = this.auctionRepository
+                .findAll()
+                .stream()
+                .filter(auction -> auction.getBuyer()!=null && auction.getBuyer().getUsername().equals(username))
+                .collect(Collectors.toList());
+
+        return boughtAuctions;
+    }
+
+    @Override
+    public Auction findById(Long id) {
+        return this.auctionRepository.findById(id)
+                .orElseThrow(() -> new InvalidAuctionIdException(id));
+    }
+
+    @Override
+    public Auction buy(Long auctionId) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String buyerUsername = authentication.getName();
+        User buyer = this.userService.findByUsername(buyerUsername);
+
+        Auction auction = this.auctionRepository.findById(auctionId)
+                .orElseThrow(() -> new InvalidAuctionIdException(auctionId));
+        auction.buyAuction(buyer);
+
+        return this.auctionRepository.save(auction);
     }
 }

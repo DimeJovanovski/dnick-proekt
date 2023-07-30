@@ -4,5 +4,15 @@
   <th:block th:each="auction : ${availableAuctions}">
 <!--    <img alt="" th:src="*{'data:image/jpeg;base64,'+ {auction.picture}}"/>-->
     <h1 th:text="${auction.title}"></h1>
+
+    <form th:action="@{'auctions/buy/{id}' (id=${auction.id})}"
+          th:method="POST" style="display: inline-block;">
+        <button type="submit"
+                class="btn btn-sm btn-danger">
+            <i class="fa fa-trash">Buy now</i>
+        </button>
+    </form>
+
+
   </th:block>
 </div>

@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfa5420a-757f-41e9-8cac-57ec02350366" name="Changes" comment="" />
+    <list default="true" id="cfa5420a-757f-41e9-8cac-57ec02350366" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b3305d-d962-45f9-b4d7-1d8a48ea610e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b3305d-d962-45f9-b4d7-1d8a48ea610e/storage_v2/_src_/database/dnick-proekt-db.hFJv4w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b3305d-d962-45f9-b4d7-1d8a48ea610e/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b3305d-d962-45f9-b4d7-1d8a48ea610e/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b3305d-d962-45f9-b4d7-1d8a48ea610e/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/36de8e47-baab-466b-93a5-085e6c05c791.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/36de8e47-baab-466b-93a5-085e6c05c791/storage_v2/_src_/database/dnick-proekt-db.hFJv4w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/36de8e47-baab-466b-93a5-085e6c05c791/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/36de8e47-baab-466b-93a5-085e6c05c791/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/36de8e47-baab-466b-93a5-085e6c05c791/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afe3a621-bf08-4dcf-a3d6-bf1717d7d664.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afe3a621-bf08-4dcf-a3d6-bf1717d7d664/storage_v2/_src_/database/dnick-proekt-db.hFJv4w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afe3a621-bf08-4dcf-a3d6-bf1717d7d664/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afe3a621-bf08-4dcf-a3d6-bf1717d7d664/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afe3a621-bf08-4dcf-a3d6-bf1717d7d664/storage_v2/_src_/database/dnick-proekt-db.hFJv4w/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/model/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/model/Auction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/repository/ShoppingCartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/service/AuctionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/service/AuctionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/service/impl/AuctionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/service/impl/AuctionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/web/controller/AuctionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dnick/proekt/ebookstore/web/controller/AuctionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auctions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auctions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/bought-auctions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/bought-auctions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/service/impl/AuctionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/service/impl/AuctionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/web/controller/AuctionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dnick/proekt/ebookstore/web/controller/AuctionController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,16 +54,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2RvrcOrlIsdAb0zoQLvgOlo8uIB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,11 +79,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimitar Jovanovski/IdeaProjects/ebookstore/src/main/resources/templates&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dimitarjovanovski/Projects/dnick-proekt/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;8ceb8724283237375195a3c5af27fde4&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -89,6 +126,8 @@
       <workItem from="1688213415131" duration="12060000" />
       <workItem from="1688229134091" duration="1486000" />
       <workItem from="1688242657474" duration="6412000" />
+      <workItem from="1690646196705" duration="2220000" />
+      <workItem from="1690711659817" duration="7942000" />
     </task>
     <servers />
   </component>

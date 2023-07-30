@@ -31,6 +31,7 @@ public class AuctionController {
         List<Auction> availableAuctions = this.auctionService.listAvailableAuctions();
         model.addAttribute("availableAuctions", availableAuctions);
         model.addAttribute("bodyContent","auctions");
+
         return "master-template";
     }
 
@@ -39,13 +40,24 @@ public class AuctionController {
         List<Auction> myAuctions = this.auctionService.getMyAuctions();
         model.addAttribute("auctions", myAuctions);
         model.addAttribute("bodyContent","my-auctions");
+
         return "master-template";
     }
 
     @GetMapping("/bought")
     public String getBoughtAuctions(Model model) {
+        List<Auction> boughtAuctions = this.auctionService.getBoughtAuctions();
+        model.addAttribute("auctions", boughtAuctions);
         model.addAttribute("bodyContent","bought-auctions");
+
         return "master-template";
+    }
+
+    @PostMapping("auctions/buy/{id}")
+    public String buyAuction(@PathVariable Long id) {
+        this.auctionService.buy(id);
+
+        return "redirect:/auctions";
     }
 
     @GetMapping("/create-form")

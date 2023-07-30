@@ -23,4 +23,9 @@ public interface AuctionService {
     List<Auction> listAvailableAuctions();
 
     List<Auction> getMyAuctions();
+    List<Auction> getBoughtAuctions();
+
+    Auction findById(Long id);
+
+    Auction buy(Long auctionId);
 }
