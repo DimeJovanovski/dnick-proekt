@@ -1,6 +1,31 @@
-<div>
-  <h1>Bought books</h1>
+<div class="container pt-4 pb-4">
   <th:block th:each="auction : ${auctions}">
-    <h1 th:text="${auction.title}"></h1>
+    <div class="container pt-2 pb-2 mb-2" style="display: inline-block; border: 1px solid grey;">
+
+      <img alt="" th:src="*{'data:image/jpeg;base64,'+ {auction.picture}}"
+           style="width: 150px; height: 230px; border: 1px solid grey; float: left; margin-right: 10px;"/>
+
+      <h4 th:text="${auction.title}"></h4>
+
+      <h5>
+        by: <th:block th:text="${auction.author}"/>
+      </h5>
+
+      <p style="padding: 0px; margin: 0px;">
+        seller: <th:block th:text="${auction.seller.username}"/>
+      </p>
+
+      <p style="padding: 0px; margin: 0px;">
+        condition: <th:block th:text="${auction.book_condition}"/>
+      </p>
+
+      <p style="padding: 0px; margin: 0px;">
+        type: <th:block th:text="${auction.book_type}"/>
+      </p>
+
+      <h5 style="margin: 3px;">
+        <th:block th:text="${auction.price}"/> den.
+      </h5>
+    </div>
   </th:block>
 </div>

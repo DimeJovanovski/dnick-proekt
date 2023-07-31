@@ -114,4 +114,9 @@ public class AuctionServiceImpl implements AuctionService {
 
         return this.auctionRepository.save(auction);
     }
+
+    @Override
+    public void delete(Auction auction) {
+        this.auctionRepository.delete(auction);
+    }
 }

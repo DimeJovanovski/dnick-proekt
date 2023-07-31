@@ -28,4 +28,6 @@ public interface AuctionService {
     Auction findById(Long id);
 
     Auction buy(Long auctionId);
+
+    void delete(Auction auction);
 }

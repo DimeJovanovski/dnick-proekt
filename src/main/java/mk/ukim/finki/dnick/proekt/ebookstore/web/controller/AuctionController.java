@@ -85,4 +85,12 @@ public class AuctionController {
         this.auctionService.create(title, author, book_condition, book_type, picture, price, user);
         return "redirect:/auctions";
     }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteAuction(@PathVariable Long id) {
+        Auction auction = this.auctionService.findById(id);
+        this.auctionService.delete(auction);
+
+        return "redirect:/auctions";
+    }
 }

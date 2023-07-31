@@ -1,10 +1,51 @@
-<div>
-  <h1>My auctions</h1>
-
+<div class="container pt-4 pb-4">
+  <a class="btn btn-success mb-3" href="/auctions/create-form" role="button">Create new auction</a>
   <th:block th:each="auction : ${auctions}">
-    <img alt="" th:src="*{'data:image/jpeg;base64,'+ {auction.picture}}"/>
-    <h1 th:text="${auction.title}"></h1>
-  </th:block>
+    <div class="container pt-2 pb-2 mb-2" style="display: inline-block; border: 1px solid grey;">
 
-  <a class="btn btn-primary" href="/auctions/create-form" role="button">Create new auction</a>
+      <img alt="" th:src="*{'data:image/jpeg;base64,'+ {auction.picture}}"
+           style="width: 150px; height: 230px; border: 1px solid grey; float: left; margin-right: 10px;"/>
+
+      <h4 th:text="${auction.title}"></h4>
+
+      <h5>
+        by: <th:block th:text="${auction.author}"/>
+      </h5>
+
+      <p style="padding: 0px; margin: 0px;">
+        condition: <th:block th:text="${auction.book_condition}"/>
+      </p>
+
+      <p style="padding: 0px; margin: 0px;">
+        type: <th:block th:text="${auction.book_type}"/>
+      </p>
+
+      <h5 style="margin: 3px;">
+        <th:block th:text="${auction.price}"/> den.
+      </h5>
+
+      <th:block th:if="${auction.status.name() == 'PENDING'}">
+        <div style="display: inline-block; background-color: #000075;">
+          <i>
+            <p style="color: white; padding: 0px; margin: 0px;">PENDING</p>
+          </i>
+        </div>
+      </th:block>
+
+      <th:block th:if="${auction.status.name() == 'SOLD'}">
+        <div style="display: inline-block; background-color: #004900;">
+          <i>
+            <p style="color: white; padding: 0px; margin: 0px;">SOLD</p>
+          </i>
+        </div>
+      </th:block>
+
+      <form th:action="@{'auctions/delete/{id}' (id=${auction.id})}" th:method="DELETE" class="mt-1">
+        <button type="submit" class="btn btn-danger">
+          <i>Delete</i>
+        </button>
+      </form>
+
+    </div>
+  </th:block>
 </div>
